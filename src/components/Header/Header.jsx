@@ -2,9 +2,13 @@ import "../Header/Header.css";
 
 const Header = () => {
   return (
-    <div>
-      <h2>This is header</h2>
-    </div>
+    <header>
+      <div className="container header_container">
+        <h5>Hello I am</h5>
+        <h1>Tushar</h1>
+        <h5 className="text-light">Fullstack Developer</h5>
+      </div>
+    </header>
   );
 };
 
