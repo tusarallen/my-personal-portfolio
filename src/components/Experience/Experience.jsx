@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-import './Experience.css';
+import "./Experience.css";
 
 const Experience = () => {
   return (
@@ -7,35 +7,51 @@ const Experience = () => {
       <section id="experience">
         <h5>What Skills I Have</h5>
         <h2>My Experience</h2>
-
         <div className="container experience__container">
           <div className="experience__fronted">
             <h3>Frontend Development</h3>
             <div className="experience__content">
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>HTML</h4>
+                  <small className="text-light">Experienced</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>CSS</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>CSS</h4>
+                  <small className="text-light">Experienced</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>Tailwind</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>Bootstrap</h4>
+                  <small className="text-light">Intermediate</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>Tailwind</h4>
+                  <small className="text-light">Experienced</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>React</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>JavaScript</h4>
+                  <small className="text-light">Intermediate</small>
+                </div>
+              </article>
+              <article className="experience__details">
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>React</h4>
+                  <small className="text-light">Experienced</small>
+                </div>
               </article>
             </div>
           </div>
@@ -44,24 +60,32 @@ const Experience = () => {
             <h3>Backend Development</h3>
             <div className="experience__content">
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>Node JS</h4>
-                <small className="text-light">Intermediate</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>Node JS</h4>
+                  <small className="text-light">Intermediate</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>Express JS</h4>
-                <small className="text-light">Intermediate</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>Express JS</h4>
+                  <small className="text-light">Intermediate</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>MongoDB</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>MongoDB</h4>
+                  <small className="text-light">Experienced</small>
+                </div>
               </article>
               <article className="experience__details">
-                <FaCheckCircle />
-                <h4>Mongoose</h4>
-                <small className="text-light">Experienced</small>
+                <FaCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>Mongoose</h4>
+                  <small className="text-light">Intermediate</small>
+                </div>
               </article>
             </div>
           </div>
