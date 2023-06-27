@@ -11,7 +11,7 @@
   border: 0.3rem solid var(--color-primary-variant);
 }
 
-.testimonial {
+.bejal {
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem;
@@ -19,6 +19,37 @@
   user-select: none;
 }
 
+.client__review {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
 #testimonials {
-    margin-top: 430px;
+  margin-top: 430px;
+}
+
+/* ==============MEDIA QUERIES(MEDIUM DEVICE)================ */
+@media screen and (max-width: 1024px) {
+  .container.testimonials__container {
+    width: 60%;
   }
+  #testimonials {
+    margin-top: 2800px;
+  }
+}
+
+/* ===============MEDIA QUERIES(SMALL DEVICE)================ */
+@media screen and (max-width: 600px) {
+  .container.testimonials__container {
+    width: var(--container-width-sm);
+  }
+  .client__review {
+    color: var(--container-width-sm);
+  }
+  #testimonials {
+    margin-top: 1700px;
+  }
+}
