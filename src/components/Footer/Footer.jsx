@@ -5,11 +5,8 @@ import { TypeAnimation } from "react-type-animation";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <footer>
-        {/* <a href="#" className="footer__logo">
-          TUSHAR
-        </a> */}
         <TypeAnimation
           className="footer__logo"
           sequence={[
