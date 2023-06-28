@@ -2,8 +2,34 @@
 import "./Contact.css";
 import { IoMail } from "react-icons/io5";
 import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1mtd6pq",
+        "template_sx015ck",
+        form.current,
+        "vsUgcojNHRtMW9pQF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div>
       <section id="contact">
@@ -42,7 +68,7 @@ const Contact = () => {
             </article>
           </div>
           {/* END OF CONTACT SECTION */}
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
               name="name"
@@ -56,7 +82,9 @@ const Contact = () => {
               required
             />
             <textarea name="message" rows="7" required></textarea>
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
