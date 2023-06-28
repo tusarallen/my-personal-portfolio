@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { FaFacebookSquare, FaGithub, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
 
@@ -34,13 +35,16 @@ const Footer = () => {
         </ul>
 
         <div className="footer__socials">
-          <a href="https://web.facebook.com/?_rdc=1&_rdr">
+          <a
+            href="https://www.facebook.com/profile.php?id=100008829903217"
+            target="_blank"
+          >
             <FaFacebookSquare style={{ fontSize: "25px" }} />
           </a>
-          <a href="https://github.com/tusarallen">
+          <a href="https://github.com/tusarallen" target="_blank">
             <FaGithub style={{ fontSize: "25px" }} />
           </a>
-          <a href="https://web.whatsapp.com/">
+          <a href="https://web.whatsapp.com/" target="_blank">
             <FaWhatsapp style={{ fontSize: "25px" }} />
           </a>
         </div>
