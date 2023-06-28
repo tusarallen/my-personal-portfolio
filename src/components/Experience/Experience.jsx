@@ -1,14 +1,25 @@
 import { FaCheckCircle } from "react-icons/fa";
 import "./Experience.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div>
       <section id="experience">
         <h5>What Skills I Have</h5>
         <h2>My Experience</h2>
-        <div className="container experience__container">
-          <div className="experience__fronted">
+        <div className="container experience__container responsive">
+          <div data-aos="fade-right" data-aos-delay="1200" className="experience__fronted">
             <h3>Frontend Development</h3>
             <div className="experience__content">
               <article className="experience__details">
@@ -56,7 +67,7 @@ const Experience = () => {
             </div>
           </div>
           {/* END OF FRONTEND */}
-          <div className="experience__backend">
+          <div data-aos="fade-left" data-aos-delay="1200" className="experience__backend">
             <h3>Backend Development</h3>
             <div className="experience__content">
               <article className="experience__details">

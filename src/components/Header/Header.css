@@ -41,7 +41,15 @@ header {
 /* ========================ME======================= */
 
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(
+    450deg,
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
   width: 22rem;
   height: 30rem;
   position: absolute;
@@ -50,6 +58,17 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 2rem 1rem 2rem 2.5rem;
+  animation: moveGradient 5s linear infinite;
+  background-size: 1600% 1600%; /* Increased the background size */
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%; /* Updated the background position */
+  }
 }
 
 /* ========================SCROLL DOWN======================= */

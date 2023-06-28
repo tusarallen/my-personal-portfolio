@@ -10,7 +10,6 @@ const Header = () => {
       <div className="container header_container">
         <h5>Hello I am</h5>
         <h1>Tushar</h1>
-        {/* <h5 className="text-light">Fullstack Developer</h5> */}
         <TypeAnimation
           className="text-light"
           sequence={[
@@ -34,8 +33,8 @@ const Header = () => {
         />
         <Cta />
         <HeaderSocial />
-        <div className="me">
-          <img src={Tushar} alt="Tushar" />
+        <div className="me gradient-border">
+          <img src={Tushar} alt="Tushar" className="profile-icon" />
         </div>
         <a href="#contact" className="scroll_down">
           Scroll Down

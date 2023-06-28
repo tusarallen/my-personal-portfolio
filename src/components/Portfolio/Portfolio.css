@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.7rem;
+  width: 1200px;
 }
 
 .portfolio__item {
@@ -34,6 +35,10 @@
   margin-bottom: 0.5rem;
 }
 
+.responsive {
+  overflow: hidden;
+}
+
 #portfolio {
   margin-top: 130px;
 }
@@ -43,6 +48,7 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1.3rem;
+    width: 300;
   }
 }
 
@@ -51,6 +57,7 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: 380px;
   }
   #portfolio {
     margin-top: 330px;

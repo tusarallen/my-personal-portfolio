@@ -1,14 +1,34 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { FaFacebookSquare, FaGithub, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
+import { TypeAnimation } from "react-type-animation";
 
 const Footer = () => {
   return (
     <div>
       <footer>
-        <a href="#" className="footer__logo">
+        {/* <a href="#" className="footer__logo">
           TUSHAR
-        </a>
+        </a> */}
+        <TypeAnimation
+          className="footer__logo"
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "AFZAL",
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            "HOSSAIN",
+            1000,
+            "TUSHAR",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{
+            fontSize: "25px",
+            display: "inline-block",
+          }}
+          repeat={10}
+        />
 
         <ul className="permalinks">
           <li>

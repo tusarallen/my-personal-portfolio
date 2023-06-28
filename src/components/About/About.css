@@ -1,7 +1,7 @@
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
-  gap: 15%;
+  gap: 8%;
 }
 
 .about__me {
@@ -46,6 +46,7 @@
 
 .about__card {
   background: var(--color-bg-variant);
+  width: 200px;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 1.2rem;
@@ -79,6 +80,10 @@
   color: var(--color-light);
 }
 
+.countup {
+  font-size: 2.5rem;
+}
+
 /* ==============MEDIA QUERIES(MEDIUM DEVICE)================ */
 @media screen and (max-width: 1024px) {
   .about__container {
@@ -101,8 +106,14 @@
     margin: 0 auto 2.5rem;
   }
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 0.8rem;
+    margin-left: -5px;
+  }
+  .about__card {
+    width: 120px;
+    margin-left: 8px;
   }
   .about__content {
     text-align: center;

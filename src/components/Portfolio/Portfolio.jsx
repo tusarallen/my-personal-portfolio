@@ -1,14 +1,25 @@
 /* eslint-disable react/jsx-no-target-blank */
 import "./Portfolio.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div>
       <section id="portfolio">
         <h5>My Recent Work</h5>
         <h2>Portfolio</h2>
-        <div className="container portfolio__container">
-          <article className="portfolio__item">
+        <div className="container portfolio__container responsive">
+          <article data-aos="fade-right" data-aos-delay="400" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/whBLrs2/attractive-fitness-woman-performing-stretching-exercise-floor-23-2148038414.jpg"
@@ -40,7 +51,7 @@ const Portfolio = () => {
               </a>
             </div>
           </article>
-          <article className="portfolio__item">
+          <article data-aos="fade-up" data-aos-delay="1200" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/w0gcrS2/man-helmet-with-number-3-it-1340-39432.jpg"
@@ -72,7 +83,7 @@ const Portfolio = () => {
               </a>
             </div>
           </article>
-          <article className="portfolio__item">
+          <article data-aos="fade-left" data-aos-delay="400" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/FYDC2L1/frying-pan-empty-with-various-spices-black-table-1220-561.jpg"
@@ -104,7 +115,7 @@ const Portfolio = () => {
               </a>
             </div>
           </article>
-          <article className="portfolio__item">
+          <article data-aos="fade-right" data-aos-delay="400" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/TtV5bkr/asian-young-main-group-hospital-professional-1291-37.jpg"
@@ -136,7 +147,7 @@ const Portfolio = () => {
               </a>
             </div>
           </article>
-          <article className="portfolio__item">
+          <article data-aos="fade-down" data-aos-delay="1200" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/dfWD7rc/rpa-concept-with-blurry-hand-touching-screen-23-2149311914.jpg"
@@ -168,7 +179,7 @@ const Portfolio = () => {
               </a>
             </div>
           </article>
-          <article className="portfolio__item">
+          <article data-aos="fade-left" data-aos-delay="400" className="portfolio__item">
             <div className="portfolio__item-image">
               <img
                 src="https://i.ibb.co/rk8Qfgh/math-education-vector-pattern-with-handwritten-formulas-40453-3.jpg"

@@ -1,15 +1,26 @@
 import { FaCheck } from "react-icons/fa";
 import "./Services.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div>
       <section id="services">
         <h5>What I Offer</h5>
         <h2>Services</h2>
 
-        <div className="container services__container">
-          <article className="service">
+        <div className="container services__container responsive">
+          <article className="service" data-aos="fade-left" data-aos-delay="800">
             <div className="service__head">
               <h3>UI/UX Design</h3>
             </div>
@@ -37,7 +48,7 @@ const Services = () => {
             </ul>
           </article>
           {/* END OF UI/UX */}
-          <article className="service">
+          <article className="service" data-aos="fade-up" data-aos-delay="1200">
             <div className="service__head">
               <h3>web development</h3>
             </div>
@@ -73,7 +84,7 @@ const Services = () => {
             </ul>
           </article>
           {/* CONTENT CREATION*/}
-          <article className="service">
+          <article className="service" data-aos="fade-right" data-aos-delay="800">
             <div className="service__head">
               <h3>Content Creation</h3>
             </div>
