@@ -40,6 +40,10 @@
   color: var(--color-primary);
 }
 
+#experience {
+  margin-top: -5px;
+}
+
 /* ==============MEDIA QUERIES(MEDIUM DEVICE)================ */
 @media screen and (max-width: 1024px) {
     .experience__container {

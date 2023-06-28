@@ -50,6 +50,10 @@ textarea {
   color: var(--color-white);
 }
 
+#contact {
+  margin-top: -5px;
+}
+
 /* ==============MEDIA QUERIES(MEDIUM DEVICE)================ */
 @media screen and (max-width: 1024px) {
   .container.contact__container {
